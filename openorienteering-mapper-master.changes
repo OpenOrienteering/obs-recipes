@@ -37,6 +37,12 @@ Sun Mar 15 05:58:51 UTC 2020 - dg0yt@darc.de
 - New upstream release: 0.9.2
 
 -------------------------------------------------------------------
+Sat Feb 24 16:20:00 UTC 2020 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Use 0.9.0 configuration, from master package
+
+-------------------------------------------------------------------
 Thu Dec  5 07:47:37 UTC 2019 - dg0yt@darc.de
 
 - [openorienteering-mapper]
@@ -74,6 +80,12 @@ Wed Mar 13 05:36:35 UTC 2019 - dg0yt@darc.de
 - Fix build with PROJ library version 6.0
 
 -------------------------------------------------------------------
+Wed Dec 26 15:04:42 UTC 2018 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Use Qt 5.12 with Windows superbuild on openSUSE Leap 15.0
+
+-------------------------------------------------------------------
 Mon Dec 24 06:03:41 UTC 2018 - dg0yt@darc.de
 
 - [openorienteering-mapper]
@@ -93,9 +105,16 @@ Sat Aug 11 08:28:14 UTC 2018 - dg0yt@darc.de
 - Drop LICENSING_PROVIDER setting for openSUSE Tumbleweed
 
 -------------------------------------------------------------------
+Wed Jun  5 05:32:23 UTC 2019 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Require qt5-qtbase-private-devel for Fedora > 30
+
+-------------------------------------------------------------------
 Sat Apr 28 05:03:12 UTC 2018 - dg0yt@darc.de
 
 - [openorienteering-mapper]
+- [openorienteering-mapper-unstable]
 - Set LICENSING_PROVIDER for openSUSE Tumbleweed
 - BuildRequire distribution-release
 
@@ -103,12 +122,14 @@ Sat Apr 28 05:03:12 UTC 2018 - dg0yt@darc.de
 Sun Mar 25 15:21:19 UTC 2018 - dg0yt@darc.de
 
 - [openorienteering-mapper]
+- [openorienteering-mapper-unstable]
 - Build without GDAL for SLE
 
 -------------------------------------------------------------------
 Mon Mar 12 07:16:01 UTC 2018 - dg0yt@darc.de
 
 - [openorienteering-mapper-master]
+- [openorienteering-mapper-unstable]
 - Apply changes from release 0.8.1 Windows spec
 
 -------------------------------------------------------------------
@@ -125,6 +146,19 @@ Sat Feb 10 20:27:49 UTC 2018 - dg0yt@darc.de
 - Based on master/unstable packaging
 
 -------------------------------------------------------------------
+Mon Jan 29 07:55:03 UTC 2018 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Bump version number to 0.9.x; significant changes to dev branch.
+
+-------------------------------------------------------------------
+Sun Dec 17 20:19:14 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Use new unified build scripts
+- openSUSE: Use libpolyclipping (clipper) 6.4.2
+
+-------------------------------------------------------------------
 Sun Dec  3 21:04:49 UTC 2017 - dg0yt@darc.de
 
 - [openorienteering-mapper-master]
@@ -136,6 +170,30 @@ Sat Dec  2 09:00:00 UTC 2017 - dg0yt@darc.de
 - [openorienteering-mapper-master]
 - Use 0.8.0 configuration
 - Use SOURCE_DATE_EPOCH for reproducible builds
+
+-------------------------------------------------------------------
+Fri Dec  1 09:13:11 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Be less restrictive when setting the version number
+
+-------------------------------------------------------------------
+Tue Nov 14 09:00:00 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Build-depend on sqlite in order to allow reproducible builds
+
+-------------------------------------------------------------------
+Wed Jun 21 08:12:31 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Review options to CMake.
+
+-------------------------------------------------------------------
+Sun Jun  4 21:53:40 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper]
+- New packaging for Mapper 0.7.0
 
 -------------------------------------------------------------------
 Wed May 24 20:47:25 UTC 2017 - dg0yt@darc.de
@@ -156,7 +214,49 @@ Sat May  6 08:54:49 UTC 2017 - dg0yt@darc.de
 - Use 0.7.0 configuration
 
 -------------------------------------------------------------------
-Sun Jun  4 21:53:40 UTC 2017 - dg0yt@darc.de
+Wed May 17 05:41:30 UTC 2017 - dg0yt@darc.de
 
-- [openorienteering-mapper]
-- New packaging for Mapper 0.7.0
+- [openorienteering-mapper-unstable]
+- Add positioning dependencies, and enable finding it on Windows
+
+-------------------------------------------------------------------
+Fri Apr 28 06:10:59 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Update descriptive information and dependencies
+
+-------------------------------------------------------------------
+Wed Apr 26 08:01:09 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Fix Windows gnustl copyright
+
+-------------------------------------------------------------------
+Mon Apr 24 06:25:52 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Review of build dependencies
+- New provisioning of copyright and licensing attribution
+  - Add gnustl-copyright to Windows package
+
+-------------------------------------------------------------------
+Wed Mar 15 22:53:07 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Require gcc5 only for Leap 42.x (suse_version 1315)
+
+-------------------------------------------------------------------
+Sat Mar 11 05:06:53 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Enable GDAL 2 in PKGBUILD
+
+-------------------------------------------------------------------
+Thu Mar  9 07:27:50 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-unstable]
+- Starting new changelog for (prerelease) builds of 0.7 unstable
+- Switching to superbuild
+- New dependencies: location, sensors, serialport, curl
+
+
