@@ -1,0 +1,71 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+# debian rules file for package openorienteering-mapper
+#
+# Copyright (c) 2014-2020 Kai Pastor
+#
+# OpenOrienteering is free software.
+# https://www.openorienteering.org
+#
+# This file is geared towards Open Build Service usage.
+#
+
+export LANG=C.UTF-8
+
+export DH_VERBOSE=1
+
+PACKAGE_NAME     := openorienteering-mapper
+UPSTREAM_VERSION := $(shell dpkg-parsechangelog -SVersion | sed -e s/-.*//)
+
+BRANCH_SUFFIX    := $(PACKAGE_NAME:openorienteering-mapper%=%)
+BRANCH           := $(BRANCH_SUFFIX:-%=%)
+ifdef BRANCH
+  SOURCE_DATE_EPOCH ?= $(shell dpkg-parsechangelog -SVersion | sed -e 's/-.*/ 0000Z/;s/.*[.]//' | date +%s -f -)
+else
+  SOURCE_DATE_EPOCH ?= $(shell dpkg-parsechangelog -SDate | date +%s -f -)
+endif
+export SOURCE_DATE_EPOCH
+
+export CXX=$(shell if g++ -dumpfullversion | grep -q 8.3 ; then echo g++-7 ; else echo g++ ; fi)
+
+override_dh_auto_configure:
+	CFLAGS="$(shell  dpkg-buildflags --get CFLAGS) $(shell  dpkg-buildflags --get CPPFLAGS)" \
+	CXXFLAGS="$(shell  dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)" \
+	LDFLAGS="$(shell  dpkg-buildflags --get LDFLAGS)" \
+	dh_auto_configure -- \
+	  -DCMAKE_BUILD_TYPE=Release \
+	  -DMapper_VERSION_DISPLAY="$(BRANCH_SUFFIX:-%=% )${UPSTREAM_VERSION}" \
+	  -DMapper_PACKAGE_NAME=$(PACKAGE_NAME) \
+	  -DMapper_AUTORUN_SYSTEM_TESTS=0 \
+	  # end
+
+override_dh_auto_install:
+	build/src/gdal/mapper-gdal-info
+	dh_auto_install
+	find "debian/$(PACKAGE_NAME)/usr/share/$(PACKAGE_NAME)/symbol sets" -name 'COPY_OF*' -delete
+ifdef BRANCH
+	for I in debian/$(PACKAGE_NAME)/usr/bin/Mapper \
+	         debian/$(PACKAGE_NAME)/usr/share/applications/Mapper.desktop \
+	         debian/$(PACKAGE_NAME)/usr/share/icons/hicolor/*/apps/Mapper.png \
+	         debian/$(PACKAGE_NAME)/usr/share/man/man1/Mapper.1 ; \
+	  do mv "$${I}" "$${I%%Mapper*}Mapper$(BRANCH_SUFFIX)$${I##*/Mapper}" ; \
+	done
+	mv debian/$(PACKAGE_NAME)/usr/share/mime/packages/openorienteering-mapper.xml \
+	   debian/$(PACKAGE_NAME)/usr/share/mime/packages/$(PACKAGE_NAME).xml
+	for I in debian/$(PACKAGE_NAME)/usr/share/icons/hicolor/*/mimetypes/application-x-openorienteering*.png ; \
+	  do mv "$${I}" "$${I%%x-openorienteering*}x-openorienteering$(BRANCH_SUFFIX)$${I##*x-openorienteering}" ; \
+	done
+	sed -i -e 's/Mapper/Mapper$(BRANCH_SUFFIX)/;/^Name=/s/-$(BRANCH)/ ($(BRANCH))/' debian/$(PACKAGE_NAME)/usr/share/applications/Mapper$(BRANCH_SUFFIX).desktop
+	sed -i -e 's/\(application\/x-openorienteering\)-\([a-z]*\)/\1-\2;\1$(BRANCH_SUFFIX)-\2/g' debian/$(PACKAGE_NAME)/usr/share/applications/Mapper$(BRANCH_SUFFIX).desktop
+	sed -i -e 's/x-openorienteering/x-openorienteering$(BRANCH_SUFFIX)/g;s/glob pattern/glob weight="49" pattern/g' debian/$(PACKAGE_NAME)/usr/share/mime/packages/$(PACKAGE_NAME).xml
+	sed -i -e 's/^.B Mapper\$$/.B Mapper$(BRANCH_SUFFIX)/' debian/$(PACKAGE_NAME)/usr/share/man/man1/Mapper$(BRANCH_SUFFIX).1
+endif
+
+override_dh_compress:
+	# Documentation used by Mapper itself must not be compressed
+	dh_compress -X.qhc -X.qch -X.txt -X.html
+
+%:
+	dh $@ --builddirectory=build --parallel
+

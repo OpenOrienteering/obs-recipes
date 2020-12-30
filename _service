@@ -1,0 +1,16 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/OpenOrienteering/mapper.git</param>
+    <param name="revision">v0.9.4</param>
+    <param name="filename">openorienteering-mapper</param>
+    <param name="versionprefix"></param>
+    <param name="versionformat">0.9.4</param>
+    <param name="extension">tar</param>
+  </service>
+  <service name="recompress">
+    <param name="file">*openorienteering-mapper*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>

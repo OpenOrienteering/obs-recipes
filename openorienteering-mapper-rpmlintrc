@@ -1,0 +1,2 @@
+addFilter("W: no-version-in-last-changelog")
+addFilter("W: explicit-lib-dependency libqt5-qt.*")

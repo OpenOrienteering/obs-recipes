@@ -1,0 +1,14 @@
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -112,6 +112,11 @@
+ 
+ int main(int argc, char** argv)
+ {
++	if (qgetenv("QT_QPA_PLATFORMTHEME") == "appmenu-qt5")
++	{
++		qunsetenv("QT_QPA_PLATFORMTHEME");
++	}
++	
+ #ifdef MAPPER_USE_QTSINGLEAPPLICATION
+ 	// Create single-instance application.
+ 	// Use "oo-mapper" instead of the executable as identifier, in case we launch from different paths.
