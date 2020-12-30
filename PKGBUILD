@@ -1,4 +1,4 @@
-pkgname=openorienteering-mapper
+pkgname=openorienteering-mapper-master
 pkgver=git-HEAD
 pkgrel=0
 pkgdesc="Orienteering map drawing software"
