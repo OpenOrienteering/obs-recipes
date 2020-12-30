@@ -24,10 +24,6 @@
 
 # Cf. https://fedoraproject.org/wiki/Changes/CMake_to_do_out-of-source_builds
 %global _vpath_builddir .
-# GCC 10 and LTO makes Mapper segfault in Fedora
-%if 0%{?fedora_version} >= 33
-  %define _lto_cflags %{nil}
-%endif
 
 Name:           openorienteering-mapper%{?branch:-%{branch}}
 Version:        git-HEAD
@@ -35,7 +31,7 @@ Release:        0
 Summary:        Orienteering map drawing software
 License:        GPL-3.0
 Group:          Productivity/Graphics/Vector Editors
-Url:            http://openorienteering.org/apps/mapper
+Url:            https://openorienteering.org/apps/mapper
 
 Source0:        %{name}-%{version}.tar.gz
 %if 0%{?suse_version}
@@ -75,7 +71,13 @@ BuildRequires:  update-desktop-files
 BuildRequires:  polyclipping-devel
 %if 0%{?fedora_version} > 30
 BuildRequires:  qt5-qtbase-private-devel
+%if 0%{?fedora_version} > 33
+BuildRequires:  libcurl-devel
+BuildRequires:  libtiff-devel
+BuildRequires:  sqlite-devel
+%else
 BuildRequires:  proj-datumgrid
+%endif
 %else
 BuildRequires:  proj-epsg
 BuildRequires:  proj-nad
@@ -127,19 +129,15 @@ export LANG=C.UTF-8
   fi
 %endif
 
-export datadir=$(rpm --eval "%{_datadir}" | sed -e "s,$(rpm --eval '%{_prefix}')/,,")
-sed -i -e "/set.MAPPER_DATA_DESTINATION/ s,share,${datadir}," CMakeLists.txt
-
-export docdir=$(rpm --eval "%{_docdir}" | sed -e "s,$(rpm --eval '%{_prefix}')/,,")
-sed -i -e "/set.MAPPER_ABOUT_DESTINATION/ s,share/doc,${docdir}," CMakeLists.txt
-
 %cmake \
+  -Wno-dev \
   -DCMAKE_BUILD_TYPE=Release \
   -DMapper_PACKAGE_NAME=%{name} \
   -DMapper_VERSION_DISPLAY="%{?branch:%{branch} }%{version}" \
 %if 0%{?suse_version}
   -DMapper_BUILD_CLIPPER:BOOL=ON \
   -DCLIPPER_SOURCE_DIR=@Mapper_SOURCE_DIR@/clipper \
+  -DCMAKE_INSTALL_DOCDIR=%{_docdir}/openorienteering-mapper%{?branch:-%{branch}} \
 %endif
 %if 0%{?fedora_version}
   -DLICENSING_PROVIDER=fedora \
@@ -162,27 +160,27 @@ make 'DESTDIR=%{buildroot}' install
 
 %if 0%{?branch:1}
   for I in %{buildroot}/usr/bin/Mapper \
-           %{buildroot}/usr/share/applications/Mapper.desktop \
-           %{buildroot}/usr/share/icons/hicolor/*/apps/Mapper.png \
-           %{buildroot}/usr/share/man/man1/Mapper.1 ; \
+           %{buildroot}%{_datadir}/applications/Mapper.desktop \
+           %{buildroot}%{_datadir}/icons/hicolor/*/apps/Mapper.png \
+           %{buildroot}%{_datadir}/man/man1/Mapper.1 ; \
       do mv "${I}" "${I%%Mapper*}Mapper-%{branch}${I##*/Mapper}" ; \
   done
-  mv %{buildroot}/usr/share/mime/packages/openorienteering-mapper.xml \
-     %{buildroot}/usr/share/mime/packages/openorienteering-mapper-%{branch}.xml
-  for I in %{buildroot}/usr/share/icons/hicolor/*/mimetypes/application-x-openorienteering*.png ; \
+  mv %{buildroot}%{_datadir}/mime/packages/openorienteering-mapper.xml \
+     %{buildroot}%{_datadir}/mime/packages/openorienteering-mapper-%{branch}.xml
+  for I in %{buildroot}%{_datadir}/icons/hicolor/*/mimetypes/application-x-openorienteering*.png ; \
       do mv "${I}" "${I%%x-openorienteering*}x-openorienteering-%{branch}${I##*x-openorienteering}" ; \
   done
   sed -i -e 's/Mapper/Mapper-%{branch}/;/^Name=/s/-%{branch}/ (%{branch})/' \
-    %{buildroot}/usr/share/applications/Mapper-%{branch}.desktop
+    %{buildroot}%{_datadir}/applications/Mapper-%{branch}.desktop
   sed -i -e 's/\(application\/x-openorienteering\)-\([a-z]*\)/\1-\2;\1-%{branch}-\2/g' \
-    %{buildroot}/usr/share/applications/Mapper-%{branch}.desktop
+    %{buildroot}%{_datadir}/applications/Mapper-%{branch}.desktop
   sed -i -e 's/x-openorienteering/x-openorienteering-%{branch}/g;s/glob pattern/glob weight="49" pattern/g' \
-    %{buildroot}/usr/share/mime/packages/openorienteering-mapper-%{branch}.xml
+    %{buildroot}%{_datadir}/mime/packages/openorienteering-mapper-%{branch}.xml
   sed -i -e 's/^.B Mapper$/.B Mapper-%{branch}/' \
-    %{buildroot}/usr/share/man/man1/Mapper-%{branch}.1
+    %{buildroot}%{_datadir}/man/man1/Mapper-%{branch}.1
 %endif
 find "%{buildroot}%{_datadir}/%{name}/symbol sets" -name 'COPY_OF*' -delete
-%fdupes -s %{buildroot}/usr/share
+%fdupes -s %{buildroot}%{_datadir}
 
 %if 0%{?suse_version}
 %suse_update_desktop_file -r -n -G "Map drawing software" Mapper%{?branch:-%{branch}} Graphics VectorGraphics
