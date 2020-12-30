@@ -1,2 +1,3 @@
 addFilter("W: no-version-in-last-changelog")
 addFilter("W: explicit-lib-dependency libqt5-qt.*")
+addFilter("W: filename-too-long-for-joliet .*")

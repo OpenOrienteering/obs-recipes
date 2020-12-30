@@ -1,83 +1,162 @@
 -------------------------------------------------------------------
+Tue Dec 29 05:00:00 UTC 2020 - dg0yt@darc.de
+
+- Automatic rebuild from updated sources
+
+-------------------------------------------------------------------
+Tue Dec 29 05:00:00 UTC 2020 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Fully restore Fedora Rawhide build and test
+- Use RPM macro for /usr/share
+- Adjust for usage of GNUInstallDirs.cmake
+
+-------------------------------------------------------------------
 Mon Oct  5 06:00:00 UTC 2020 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.9.4
+
+-------------------------------------------------------------------
+Mon Oct 05 05:00:00 UTC 2020 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Disable tests on Fedora Rawhide, due to unresolved segmentation
+  fault.
 
 -------------------------------------------------------------------
 Sat May 16 06:02:58 UTC 2020 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.9.3
 
 -------------------------------------------------------------------
 Sun Mar 15 05:58:51 UTC 2020 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.9.2
 
 -------------------------------------------------------------------
 Thu Dec  5 07:47:37 UTC 2019 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.9.1
 
 -------------------------------------------------------------------
 Sat Oct 26 12:20:17 UTC 2019 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - Fix detection of SLE vs. openSUSE
 
 -------------------------------------------------------------------
 Wed Oct 23 19:27:10 UTC 2019 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - Add Qt5 sensors build dependency
 
 -------------------------------------------------------------------
 Tue Oct 22 15:29:33 UTC 2019 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.9.0
 - Add Qt5 location and serialport build dependencies
 
 -------------------------------------------------------------------
 Fri Jul  5 04:35:48 UTC 2019 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - Fix build with PROJ 6
+
+-------------------------------------------------------------------
+Wed Mar 13 05:36:35 UTC 2019 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Fix build with PROJ library version 6.0
 
 -------------------------------------------------------------------
 Mon Dec 24 06:03:41 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.8.4
 
 -------------------------------------------------------------------
 Sat Oct 21 19:10:00 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.8.3
 
 -------------------------------------------------------------------
 Sat Aug 11 08:28:14 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.8.2
 - Drop LICENSING_PROVIDER setting for openSUSE Tumbleweed
 
 -------------------------------------------------------------------
 Sat Apr 28 05:03:12 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - Set LICENSING_PROVIDER for openSUSE Tumbleweed
 - BuildRequire distribution-release
 
 -------------------------------------------------------------------
 Sun Mar 25 15:21:19 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - Build without GDAL for SLE
+
+-------------------------------------------------------------------
+Mon Mar 12 07:16:01 UTC 2018 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Apply changes from release 0.8.1 Windows spec
 
 -------------------------------------------------------------------
 Sun Mar 11 14:11:43 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.8.1
 
 -------------------------------------------------------------------
 Sat Feb 10 20:27:49 UTC 2018 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New upstream release: 0.8.0
 - Based on master/unstable packaging
 
 -------------------------------------------------------------------
+Sun Dec  3 21:04:49 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- openSUSE: Use libpolyclipping (clipper) 6.4.2
+
+-------------------------------------------------------------------
+Sat Dec  2 09:00:00 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Use 0.8.0 configuration
+- Use SOURCE_DATE_EPOCH for reproducible builds
+
+-------------------------------------------------------------------
+Wed May 24 20:47:25 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Use 0.7.0-RC4 configuration
+
+-------------------------------------------------------------------
+Sun May  7 16:48:35 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Use 0.7.0-RC2 configuration
+
+-------------------------------------------------------------------
+Sat May  6 08:54:49 UTC 2017 - dg0yt@darc.de
+
+- [openorienteering-mapper-master]
+- Use 0.7.0 configuration
+
+-------------------------------------------------------------------
 Sun Jun  4 21:53:40 UTC 2017 - dg0yt@darc.de
 
+- [openorienteering-mapper]
 - New packaging for Mapper 0.7.0
