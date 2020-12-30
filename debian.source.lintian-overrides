@@ -1,7 +1,7 @@
 # Don't warn about NMU on OBS
-openorienteering-mapper-unstable source: changelog-should-mention-nmu
+openorienteering-mapper-master source: changelog-should-mention-nmu
 
 # We can't use >= 3.9.5 on OBS:
 # From 3.9.5, Checksums-Sha1 and Checksums-Sha256 are now mandatory in .dsc files.
 # OBS source service doesn't provide these fields for us.
-openorienteering-mapper-unstable source: ancient-standards-version 3.9.2 (current is 3.9.6)
+openorienteering-mapper-master source: ancient-standards-version 3.9.2 (current is 3.9.6)
