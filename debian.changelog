@@ -1,45 +1,45 @@
-openorienteering-mapper-master (0.9.20201230-0) unstable; urgency=low
+openorienteering-mapper (0.9.20201230-0) unstable; urgency=low
 
   * Automatic rebuild
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 30 Dec 2020 06:00:00 +0000
 
-openorienteering-mapper-master (0.9.4-0) unstable; urgency=low
+openorienteering-mapper (0.9.4-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 5 Oct 2020 06:00:00 +0000
 
-openorienteering-mapper-master (0.9.3-0) unstable; urgency=low
+openorienteering-mapper (0.9.3-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 16 May 2020 06:00:00 +0000
 
-openorienteering-mapper-master (0.9.2-0) unstable; urgency=low
+openorienteering-mapper (0.9.2-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 15 Mar 2020 06:00:00 +0000
 
-openorienteering-mapper-master (0.9.20200224-0) unstable; urgency=low
+openorienteering-mapper (0.9.20200224-0) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Use 0.9.0 configuration, from master package.
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 24 Feb 2020 16:20:00 +0000
 
-openorienteering-mapper-master (0.9.1-0) unstable; urgency=low
+openorienteering-mapper (0.9.1-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Thu, 5 Dec 2019 07:48:00 +0000
 
-openorienteering-mapper-master (0.9.20191026-0) unstable; urgency=low
+openorienteering-mapper (0.9.20191026-0) unstable; urgency=low
 
   * [openorienteering-mapper-master]
   * Use 0.9.0 configuration.
@@ -48,35 +48,35 @@ openorienteering-mapper-master (0.9.20191026-0) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 28 Oct 2019 09:00:00 +0000
 
-openorienteering-mapper-master (0.9.0-0) unstable; urgency=low
+openorienteering-mapper (0.9.0-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Tue, 22 Oct 2019 15:20:00 +0000
 
-openorienteering-mapper-master (0.8.4-0) unstable; urgency=low
+openorienteering-mapper (0.8.4-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 24 Dec 2018 06:00:00 +0000
 
-openorienteering-mapper-master (0.8.3-0) unstable; urgency=low
+openorienteering-mapper (0.8.3-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 21 Oct 2018 17:10:00 +0000
 
-openorienteering-mapper-master (0.8.2-0) unstable; urgency=low
+openorienteering-mapper (0.8.2-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 11 Aug 2018 09:27:00 +0000
 
-openorienteering-mapper-master (0.8.1-0) unstable; urgency=low
+openorienteering-mapper (0.8.1-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
@@ -84,7 +84,7 @@ openorienteering-mapper-master (0.8.1-0) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 11 Mar 2018 14:11:00 +0000
 
-openorienteering-mapper-master (0.8.0-0) unstable; urgency=low
+openorienteering-mapper (0.8.0-0) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
@@ -92,21 +92,21 @@ openorienteering-mapper-master (0.8.0-0) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 10 Feb 2018 20:27:00 +0000
 
-openorienteering-mapper-master (0.9.20180129-0) unstable; urgency=low
+openorienteering-mapper (0.9.20180129-0) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Bump version number; significant changes to dev branch.
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 29 Jan 2018 07:54:00 +0000
 
-openorienteering-mapper-master (0.8.20171217-0) unstable; urgency=low
+openorienteering-mapper (0.8.20171217-0) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Use new unified build scripts
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 17 Dec 2017 20:19:14 +0000
 
-openorienteering-mapper-master (0.8.20171201-0) unstable; urgency=low
+openorienteering-mapper (0.8.20171201-0) unstable; urgency=low
 
   * [openorienteering-mapper-master]
   * [openorienteering-mapper-unstable]
@@ -115,63 +115,63 @@ openorienteering-mapper-master (0.8.20171201-0) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 2 Dec 2017 09:00:00 +0000
 
-openorienteering-mapper-master (0.8.20171129-0) unstable; urgency=low
+openorienteering-mapper (0.8.20171129-0) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Updated cmake-3.0-build.diff
 
  -- Kai Pastor <dg0yt@darc.de>  Fri, 01 Dec 2017 00:00:01 +0000
 
-openorienteering-mapper-master (0.8.20171114-0) unstable; urgency=low
+openorienteering-mapper (0.8.20171114-0) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Build-depend on sqlite in order to allow reproducible builds
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 14 Nov 2017 09:00:00 +0000
 
-openorienteering-mapper-master (0.7.0-4) unstable; urgency=low
+openorienteering-mapper (0.7.0-4) unstable; urgency=low
 
   * [openorienteering-mapper]
   * Don't compress documentation files
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 24 Oct 2017 07:00:00 +0000
 
-openorienteering-mapper-master (0.7.20170524-1) unstable; urgency=low
+openorienteering-mapper (0.7.20170524-1) unstable; urgency=low
 
   * [openorienteering-mapper-master]
   * Use 0.7.0-RC4 configuration
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 24 May 2017 22:47:00 +0200
 
-openorienteering-mapper-master (0.6.20170517-1) unstable; urgency=low
+openorienteering-mapper (0.6.20170517-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Add positioning dependencies
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 17 May 2017 07:35:00 +0000
 
-openorienteering-mapper-master (0.7.20170507-1) unstable; urgency=low
+openorienteering-mapper (0.7.20170507-1) unstable; urgency=low
 
   * [openorienteering-mapper-master]
   * Use 0.7.0-RC2 configuration
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 7 May 2017 18:50:00 +0200
 
-openorienteering-mapper-master (0.7.20170506-1) unstable; urgency=low
+openorienteering-mapper (0.7.20170506-1) unstable; urgency=low
 
   * [openorienteering-mapper-master]
   * New master branch package
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 6 May 2017 10:55:00 +0200
 
-openorienteering-mapper-master (0.7.0-1) unstable; urgency=low
+openorienteering-mapper (0.7.0-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 4 Mar 2017 21:53:00 +0100
 
-openorienteering-mapper-master (0.6.8-1) unstable; urgency=low
+openorienteering-mapper (0.6.8-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
@@ -179,7 +179,7 @@ openorienteering-mapper-master (0.6.8-1) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 4 Mar 2017 21:53:00 +0100
 
-openorienteering-mapper-master (0.6.20170227-1) unstable; urgency=low
+openorienteering-mapper (0.6.20170227-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Use dpkg-buildflags
@@ -187,14 +187,14 @@ openorienteering-mapper-master (0.6.20170227-1) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Tue, 28 Feb 2017 06:55:00 +0100
 
-openorienteering-mapper-master (0.6.7-1) unstable; urgency=low
+openorienteering-mapper (0.6.7-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 21 Dec 2016 21:30:00 +0100
 
-openorienteering-mapper-master (0.6.6-1) unstable; urgency=low
+openorienteering-mapper (0.6.6-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
@@ -202,98 +202,98 @@ openorienteering-mapper-master (0.6.6-1) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 10 Oct 2016 07:00:00 +0100
 
-openorienteering-mapper-master (0.6.20160919-1) unstable; urgency=low
+openorienteering-mapper (0.6.20160919-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Install MIME type registration
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 19 Sep 2016 08:00:00 +0100
 
-openorienteering-mapper-master (0.6.5-1) unstable; urgency=low
+openorienteering-mapper (0.6.5-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Thu, 1 Sep 2016 23:17:00 +0100
 
-openorienteering-mapper-master (0.6.4-1) unstable; urgency=low
+openorienteering-mapper (0.6.4-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 1 Jul 2016 06:27:00 +0100
 
-openorienteering-mapper-master (0.6.3-1) unstable; urgency=low
+openorienteering-mapper (0.6.3-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 18 Jun 2016 18:49:00 +0100
 
-openorienteering-mapper-master (0.6.2-1) unstable; urgency=low
+openorienteering-mapper (0.6.2-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 28 May 2016 18:49:00 +0100
 
-openorienteering-mapper-master (0.6.1-4) unstable; urgency=low
+openorienteering-mapper (0.6.1-4) unstable; urgency=low
 
   * [openorienteering-mapper]
   * Disable Ubuntu's global menu (appmenu.diff)
 
  -- Kai Pastor <dg0yt@darc.de>  Mon, 29 Feb 2016 09:00:00 +0100
 
-openorienteering-mapper-master (0.6.20160120-1) unstable; urgency=low
+openorienteering-mapper (0.6.20160120-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Use GDAL
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 20 Jan 2016 08:42:00 +0100
 
-openorienteering-mapper-master (0.6.1-1) unstable; urgency=low
+openorienteering-mapper (0.6.1-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 10 Jan 2016 17:30:00 +0100
 
-openorienteering-mapper-master (0.6.0-1) unstable; urgency=low
+openorienteering-mapper (0.6.0-1) unstable; urgency=low
 
   * [openorienteering-mapper]
   * New upstream release
 
  -- Kai Pastor <dg0yt@darc.de>  Wed, 23 Dec 2015 11:39:00 +0100
 
-openorienteering-mapper-master (0.5.20151101-1) unstable; urgency=low
+openorienteering-mapper (0.5.20151101-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Fix month in all changelog entries
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 31 Oct 2015 20:42:00 +0100
 
-openorienteering-mapper-master (0.5.20151031-1) unstable; urgency=low
+openorienteering-mapper (0.5.20151031-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Fix version number scheme in the changelog
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 31 Oct 2015 20:42:00 +0100
 
-openorienteering-mapper-master (20150702-1) unstable; urgency=low
+openorienteering-mapper (20150702-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * Snapshot from upstream master branch
 
  -- Kai Pastor <dg0yt@darc.de>  Thu, 2 Jul 2015 08:41:00 +0200
 
-openorienteering-mapper-master (20141014-1) unstable; urgency=low
+openorienteering-mapper (20141014-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * New upstream release preview (version 0.5.95)
 
  -- Kai Pastor <dg0yt@darc.de>  Tue, 14 Oct 2014 02:16:00 +0200
 
-openorienteering-mapper-master (20141012-1) unstable; urgency=low
+openorienteering-mapper (20141012-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * New upstream release preview (version 0.5.94)
@@ -302,21 +302,21 @@ openorienteering-mapper-master (20141012-1) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 12 Oct 2014 17:36:00 +0200
 
-openorienteering-mapper-master (20140726-1) unstable; urgency=low
+openorienteering-mapper (20140726-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * New upstream release preview (version 0.5.93)
 
  -- Kai Pastor <dg0yt@darc.de>  Sat, 27 Jul 2014 17:14:00 +0200
 
-openorienteering-mapper-master (20140513-1) unstable; urgency=low
+openorienteering-mapper (20140513-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * New upstream revision
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 13 May 2014 06:42:35 +0200
 
-openorienteering-mapper-master (20140511-1) unstable; urgency=low
+openorienteering-mapper (20140511-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * New upstream revision
@@ -324,7 +324,7 @@ openorienteering-mapper-master (20140511-1) unstable; urgency=low
 
  -- Kai Pastor <dg0yt@darc.de>  Sun, 11 May 2014 12:10:35 +0200
 
-openorienteering-mapper-master (20140501-1) unstable; urgency=low
+openorienteering-mapper (20140501-1) unstable; urgency=low
 
   * [openorienteering-mapper-unstable]
   * First distribution package release

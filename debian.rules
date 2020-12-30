@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 #
-# debian rules file for package openorienteering-mapper-master
+# debian rules file for package openorienteering-mapper
 #
 # Copyright (c) 2014-2020 Kai Pastor
 #
@@ -15,7 +15,7 @@ export LANG=C.UTF-8
 
 export DH_VERBOSE=1
 
-PACKAGE_NAME     := openorienteering-mapper-master
+PACKAGE_NAME     := openorienteering-mapper
 UPSTREAM_VERSION := $(shell dpkg-parsechangelog -SVersion | sed -e s/-.*//)
 
 BRANCH_SUFFIX    := $(PACKAGE_NAME:openorienteering-mapper%=%)

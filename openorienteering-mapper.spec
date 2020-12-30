@@ -1,5 +1,5 @@
 #
-# spec file for package openorienteering-mapper-master
+# spec file for package openorienteering-mapper
 #
 # Copyright (c) 2014-2020 Kai Pastor
 #
@@ -13,7 +13,7 @@
 # Unless using OBS/osc for building, the resulting spec file in the SRPMS
 # provides the best starting point for individual RPM builds.
 
-%global branch master
+#%%global branch master
 %global nativename openorienteering-mapper%{?branch:-%{branch}}
 
 %if 0%{?sle_version} && ! 0%{?is_opensuse}

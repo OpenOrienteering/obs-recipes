@@ -1,4 +1,4 @@
-Source: openorienteering-mapper-master
+Source: openorienteering-mapper
 Section: graphics
 Priority: extra
 Maintainer: Kai Pastor <dg0yt@darc.de>
@@ -8,7 +8,7 @@ Homepage: https://www.openorienteering.org/apps/mapper/
 Vcs-Git: https://github.com/OpenOrienteering/mapper.git
 Vcs-Browser: https://github.com/OpenOrienteering/mapper
 
-Package: openorienteering-mapper-master
+Package: openorienteering-mapper
 Architecture: any
 Pre-depends: dpkg (>= 1.15.6~)
 Depends: ${shlibs:Depends}, ${misc:Depends}, qt5-image-formats-plugins, libqt5positioning5-plugins
